@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Руслан Козырь](https://up.htmlacademy.ru/adaptive/19/user/1158521).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/id29644).
 
 ---
 
@@ -20,7 +20,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 1. Зарегистрируйтесь на Гитхабе
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь
 
 #### 2. Создайте форк
 
