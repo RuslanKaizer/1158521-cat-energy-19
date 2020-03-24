@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Руслан Козырь](https://up.htmlacademy.ru/adaptive/19/user/1158521).
-* Наставник: [Ирина Малиновская] (https://htmlacademy.ru/profile/id29644).
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/id29644).
 
 ---
 
