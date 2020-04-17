@@ -7,9 +7,9 @@
 <body>
 
 	<header class="page-header">
-	  <a class="page-header__logo">
+	  <button class="page-header__logo" type="button">
 			<img class="page-header__logo-image" src="#">
-    </a>
+	  </button>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"></button>
       <div class="main-nav__wrapper">
@@ -30,85 +30,101 @@
 
   <main class="page-main">
     <section class="questionary">
-      <h1 class="questionary__main-title">Подобрать программы</h1>
-      <p class="questionary__info">Заполните анкету и мы подберем<br>
-        программу питания для вашего кота</p>
-      <form action="https://echo.htmlacademy.ru" method="post" class="questionary__form">
-        <div class="cat-wrapper">
-          <p>
-            <label for="cat-name">Имя:*</label>
-            <input type="text" id="cat-name" name="catname" placeholder="Барсик">
-          </p>
-          <p>
-            <label for="cat-weight">Вес(кг):*</label>
-            <input type="text" id="cat-weight" name="catweight" placeholder="7">
-          </p>
-          <p>
-            <label for="cat-age">Возраст(лет):</label>
-            <input type="text" id="cat-age" name="catage" placeholder="7">
-          </p>
-        </div>
-        <div class="weight-program">
-          <p>
-            <input type="radio" id="losing-weight" name="weight" checked>
-            <label for="losing-weight">Похудение</label>
-          </p>
-            <input type="radio" id="weight-gain" name="weight">
-            <label for="weight-gain">Набор массы</label>
-          <p>
-            <input type="radio" id="advice" name="weight">
-            <label for="advice">Не знаю (Нужен ваш совет)</label>
-          </p>
-        </div>
-        <h2 class="questionary__title">Контактные данные<br>
-          (владельца кота)</h2>
-        <div class="cat-owner">
-          <p>
-            <label for="e-mail">E-mail:*</label>
-            <input type="email" id="e-mail" name="email" placeholder="kuklachev@gmail.com">
-          </p>
-          <p>
-            <label for="telephone">Телефон:*</label>
-            <input type="tel" id="telephone" name="telephone" placeholder="8 (960) 900-60-90">
-          </p>
-        </div>
-        <div class="comment">
-          <h2 class="questionary__title">Комментарий</h2>
-          <textarea name="comment">Расскажите обо всех повадках кота</textarea>
-        </div>
-        <div class="additionaly">
-          <p>
-            <input type="checkbox" id="sugar" name="sweetener" checked>
-            <label for="sugar">Сахарозаменитель</label>
-          </p>
-          <p>
-            <input type="checkbox" id="water" name="water">
-            <label for="water">Питьевая вода</label>
-          </p>
-          <p>
-            <input type="checkbox" id="milk" name="milk">
-            <label for="milk">Молоко</label>
-          </p>
-          <p>
-            <input type="checkbox" id="vitamins" name="vitamins">
-            <label for="vitamins">Витамины</label>
-          </p>
-        </div>
-        <button class="questionary__button" type="submit">Отправить заявку</button>
-        <small>* — Обязательные поля</small>
-      </form>
+      <div class="questionary__wrapper">
+        <h2 class="questionary__main-title">Подобрать программы</h2>
+        <p class="questionary__info">Заполните анкету и мы подберем<br>
+          программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" method="post" class="questionary__form">
+          <div class="cat-wrapper">
+            <fieldset class="form-info">
+              <legend class="visually-hidden">Данные котика</legend>
+              <p>
+                <label for="cat-name">Имя:*</label>
+                <input type="text" id="cat-name" name="catname" placeholder="Барсик">
+              </p>
+              <p>
+                <label for="cat-weight">Вес(кг):*</label>
+                <input type="text" id="cat-weight" name="catweight" placeholder="7">
+              </p>
+              <p>
+                <label for="cat-age">Возраст(лет):</label>
+                <input type="text" id="cat-age" name="catage" placeholder="7">
+              </p>
+            </fieldset>
+          </div>
+          <div class="weight-program">
+            <fieldset class="form-info">
+              <legend class="visually-hidden">Выбор программы</legend>
+              <p>
+                <input type="radio" id="losing-weight" name="weight" checked>
+                <label for="losing-weight">Похудение</label>
+              </p>
+                <input type="radio" id="weight-gain" name="weight">
+                <label for="weight-gain">Набор массы</label>
+              <p>
+                <input type="radio" id="advice" name="weight">
+                <label for="advice">Не знаю (Нужен ваш совет)</label>
+              </p>
+            </fieldset>
+          </div>
+          <h2 class="questionary__title">Контактные данные<br>
+            (владельца кота)</h2>
+          <div class="cat-owner">
+            <fieldset class="form-info">
+              <legend class="visually-hidden">Контактные данные</legend>
+              <p>
+                <label for="e-mail">E-mail:*</label>
+                <input type="email" id="e-mail" name="email" placeholder="kuklachev@gmail.com">
+              </p>
+              <p>
+                <label for="telephone">Телефон:*</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="8 (960) 900-60-90">
+              </p>
+            </fieldset>
+          </div>
+          <div class="comment">
+            <h2 class="questionary__title">Комментарий</h2>
+            <textarea name="comment">Расскажите обо всех повадках кота</textarea>
+          </div>
+          <div class="additionaly">
+            <fieldset class="form-info">
+              <legend class="visually-hidden">Дополнительные товары</legend>
+              <p>
+                <input type="checkbox" id="sugar" name="sweetener" checked>
+                <label for="sugar">Сахарозаменитель</label>
+              </p>
+              <p>
+                <input type="checkbox" id="water" name="water">
+                <label for="water">Питьевая вода</label>
+              </p>
+              <p>
+                <input type="checkbox" id="milk" name="milk">
+                <label for="milk">Молоко</label>
+              </p>
+              <p>
+                <input type="checkbox" id="vitamins" name="vitamins">
+                <label for="vitamins">Витамины</label>
+              </p>
+            </fieldset>
+          </div>
+          <button class="questionary__button" type="submit">Отправить заявку</button>
+          <small>* — Обязательные поля</small>
+        </form>
+      </div>
     </section>
   </main>
 
   <section class="map">
-    <p class="map__title">Приглашаем<br>
-      к сотрудничеству<br>
-      дилеров!</p>
-    <p class="map__info">ул. Большая<br>
-      Конюшенная, д. 19/8<br>
-      Санкт-Петербург</p>
     <div class="map_wrapper">
-      <img class="map__wrapper-image">
+      <p class="map__title">Приглашаем<br>
+        к сотрудничеству<br>
+        дилеров!</p>
+      <p class="map__info">ул. Большая<br>
+        Конюшенная, д. 19/8<br>
+        Санкт-Петербург</p>
+      <div class="map__container">
+        <img class="map__container-image">
+      </div>
     </div>
   </section>
 

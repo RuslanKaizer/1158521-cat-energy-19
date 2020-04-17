@@ -7,9 +7,9 @@
 <body>
 
 	<header class="page-header">
-	  <a class="page-header__logo">
+	  <button class="page-header__logo" type="button">
 			<img class="page-header__logo-image" src="#">
-    </a>
+	  </button>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"></button>
       <div class="main-nav__wrapper">
@@ -29,30 +29,34 @@
   </header>
 
   <main class="page-main">
-
+    <h1 class="visually-hidden">Главная страница магазина для питания кошек Cat Energy</h1>
     <section class="choose-program">
-      <h1 class="choose-programm__title">Функциональное питание для котов</h1>
-      <p class="choose-program__slogan">Занялся собой? Займись котом!</p>
-      <div class="choose-program__can">
-        <img class="choose-program__can-image" src="#">
+      <div class="choose-program__wrapper">
+        <h2 class="choose-programm__title choose-programm__title--white">Функциональное питание для котов</h2>
+        <p class="choose-program__slogan">Занялся собой? Займись котом!</p>
+        <div class="choose-program__can">
+          <img class="choose-program__can-image" src="#">
+        </div>
+        <a class="choose-program__link">Подобрать программу</a>
       </div>
-      <button class="choose-program__button" type="button">Подобрать программу</button>
     </section>
 
     <section class="programs">
-      <div class="programs__slim">
-        <h2 class="programs__title">Похудение</h2>
-        <p class="programs__info">Ваш кот весит больше собаки и почти утратил способность<br>
-           лазить по деревьям? Пора на диету! Cat Energy Slim поможет<br>
-          вашему питомцу сбросить лишний вес.</p>
-        <a class="programs__more" href="#">Каталог slim</a>
-      </div>
-      <div class="programs__pro">
-        <h2 class="programs__title">Набор массы</h2>
-        <p class="programs__info">Заработать авторитет среди дворовых котов и даже собак?<br>
-          Серия Cat Energy Pro поможет вашему коту нарастить<br>
-          необходимые мышцы!</p>
-        <a class="programs__more" href="#">Каталог pro</a>
+      <div class="programs__wrapper">
+        <div class="programs__slim">
+          <h2 class="programs__title">Похудение</h2>
+          <p class="programs__info">Ваш кот весит больше собаки и почти утратил способность<br>
+            лазить по деревьям? Пора на диету! Cat Energy Slim поможет<br>
+            вашему питомцу сбросить лишний вес.</p>
+          <a class="programs__more" href="#">Каталог slim</a>
+        </div>
+        <div class="programs__pro">
+          <h2 class="programs__title">Набор массы</h2>
+          <p class="programs__info">Заработать авторитет среди дворовых котов и даже собак?<br>
+            Серия Cat Energy Pro поможет вашему коту нарастить<br>
+            необходимые мышцы!</p>
+          <a class="programs__more" href="#">Каталог pro</a>
+        </div>
       </div>
     </section>
 
@@ -85,40 +89,44 @@
     </section>
 
     <section class="live-example">
-      <h2 class="live-example__title">Живой пример</h2>
-      <p class="live-example__info">Борис сбросил 5 кг за 2 месяца, просто<br>
-        заменив свой обычный корм на Cat<br>
-        Energy Slim. Отличный результат без<br>
-        изнуряющих тренировок! При этом он не<br>
-        менял своих привычек и по-прежнему<br>
-        спит по 16 часов в день.</p>
-      <div class="live-example__result">
-        <h2 class="result__title">5 кг</h2>
-        <p class="result__info">Снижение веса</p>
-      </div>
-      <div class="live-example__result">
-        <h2 class="result__title">60 дней</h2>
-        <p class="result__info">Затрачено времени</p>
-      </div>
-      <p class="live-example__price">Затраты на питание</p>
-      <div class="live-example__cat">
-        <img class="live-example__cat-image" src="#">
-      </div>
-      <div class="live-example__converse">
-        <p class="converse__title">Было</p>
-        <p class="converse__title">Cтало</p>
+      <div class="live-example__wrapper">
+        <h2 class="live-example__title">Живой пример</h2>
+        <p class="live-example__info">Борис сбросил 5 кг за 2 месяца, просто<br>
+          заменив свой обычный корм на Cat<br>
+          Energy Slim. Отличный результат без<br>
+          изнуряющих тренировок! При этом он не<br>
+          менял своих привычек и по-прежнему<br>
+          спит по 16 часов в день.</p>
+        <div class="live-example__result">
+          <h2 class="result__title">5 кг</h2>
+          <p class="result__info">Снижение веса</p>
+        </div>
+        <div class="live-example__result">
+          <h2 class="result__title">60 дней</h2>
+          <p class="result__info">Затрачено времени</p>
+        </div>
+        <p class="live-example__price">Затраты на питание</p>
+        <div class="live-example__cat">
+          <img class="live-example__cat-image" src="#">
+        </div>
+        <div class="live-example__converse">
+          <p class="converse__title">Было</p>
+          <p class="converse__title">Cтало</p>
+        </div>
       </div>
     </section>
 
     <section class="map">
-      <p class="map__title">Приглашаем<br>
-        к сотрудничеству<br>
-        дилеров!</p>
-      <p class="map__info">ул. Большая<br>
-        Конюшенная, д. 19/8<br>
-        Санкт-Петербург</p>
       <div class="map_wrapper">
-        <img class="map__wrapper-image">
+        <p class="map__title">Приглашаем<br>
+          к сотрудничеству<br>
+          дилеров!</p>
+        <p class="map__info">ул. Большая<br>
+          Конюшенная, д. 19/8<br>
+          Санкт-Петербург</p>
+        <div class="map__container">
+          <img class="map__container-image">
+        </div>
       </div>
     </section>
 
