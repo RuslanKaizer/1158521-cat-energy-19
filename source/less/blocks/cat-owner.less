@@ -1,0 +1,118 @@
+.cat-owner {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.cat-owner__label {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  align-items: center;
+  margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 47%;
+    margin-right: 39px;
+    padding-left: 41px;
+  }
+}
+
+.cat-owner__input {
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  height: 45px;
+  padding: 0 40px 0 14px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+
+  &::placeholder {
+    color: #444444;
+  }
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus,
+  &:active {
+    outline: 2px solid #444444;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    outline: 2px solid #ff8282;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    height: 52px;
+    padding-right: 50px;
+    padding-left: 19px;
+  }
+}
+
+.cat-owner__input:focus ~ .cat-owner__icon-wrapper .cat-owner__icon,
+.cat-owner__input:active ~ .cat-owner__icon-wrapper .cat-owner__icon {
+  fill: #68b738;
+}
+
+.cat-owner__input:not(:placeholder-shown):invalid ~ .cat-owner__icon-wrapper .cat-owner__icon {
+  fill: #ff8282;
+}
+
+.cat-owner__icon-wrapper {
+  position: absolute;
+
+  &--email {
+    top: 13px;
+    right: 16px;
+
+    @media (min-width: @tablet-width) {
+      top: 14px;
+      right: 20px;
+    }
+  }
+
+  &--phone {
+    top: 13px;
+    right: 13px;
+
+    @media (min-width: @tablet-width) {
+      top: 17px;
+      right: 17px;
+    }
+  }
+}
+
+.cat-owner__text {
+  padding-right: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 19px;
+
+    &--phone {
+      padding-right: 13px;
+      margin-left: -3px;
+      margin-right: 3px;
+    }
+  }
+}

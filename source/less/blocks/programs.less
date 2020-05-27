@@ -1,0 +1,247 @@
+.programs {
+  padding-top: 12px;
+  padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+.programs__list {
+  .list-reset();
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.programs__item {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  padding-top: 24px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  padding-left: 21px;
+
+  &--next {
+    margin-top: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    min-height: 371px;
+    padding-top: 72px;
+    padding-left: 52px;
+    padding-right: 22px;
+
+    &--next {
+      margin-top: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 47%;
+    padding-top: 46px;
+    padding-bottom: 39px;
+    padding-right: 25px;
+
+    &--next {
+      margin-top: 0;
+      padding-right: 30px;
+      padding-left: 56px;
+    }
+  }
+}
+
+.programs__icon-wrapper {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  background-color: #68b738;
+  border-radius: 50%;
+
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    margin-top: 18px;
+    margin-right: 40px;
+    margin-left: 15px;
+    float: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 61px;
+  }
+}
+
+.programs__icon-wrapper-m {
+  @media (min-width: @tablet-width) {
+    margin-left: 52px;
+    margin-right: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 2px;
+    margin-left: 0;
+    margin-right: 60px;
+  }
+}
+
+.programs__icon-cat-slim {
+  margin-top: -2px;
+  margin-left: 10px;
+  width: 35px;
+  height: 49px;
+
+  @media (min-width: @tablet-width) {
+    width: 141px;
+    height: 194px;
+    margin-top: -13px;
+    margin-left: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 71px;
+    height: 97px;
+    margin-top: -5px;
+    margin-left: 13px;
+  }
+}
+
+.programs__icon-cat-pro {
+  margin-left: -9px;
+  margin-top: 10px;
+  width: 67px;
+  height: 28px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 113px;
+    margin-top: 43px;
+    margin-left: -35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 57px;
+    margin-top: 21px;
+    margin-left: -19px;
+  }
+}
+
+.programs__title {
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #111111;
+  font-size: 24px;
+  line-height: 37px;
+  margin-top: 6px;
+  margin-bottom: 15.5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    text-align: left;
+    min-width: 250px;
+    margin-top: 1px;
+    margin-bottom: 26px;
+    margin-left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+    margin-bottom: 47.5px;
+  }
+}
+
+.programs__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 5px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    margin-bottom: 7px;
+  }
+}
+
+.programs__link {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: #111111;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 8px;
+  }
+}
+
+.programs__link--arrow::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 11px;
+  margin-left: 12px;
+  margin-bottom: 1px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 23px;
+    margin-bottom: 3px;
+  }
+}
+
+.programs__link--arrow:focus::after,
+.programs__link--arrow:hover::after {
+  width: 33px;
+  height: 11px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+  transition-duration: 150ms;
+}
+
+.programs__link:active {
+  opacity: 0.3;
+
+  &::after {
+    opacity: 0.3;
+  }
+}

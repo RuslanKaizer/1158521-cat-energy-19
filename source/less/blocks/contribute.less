@@ -1,0 +1,142 @@
+.contribute {
+  padding-top: 19px;
+  padding-bottom: 18px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 26px;
+    padding-bottom: 22px;
+  }
+}
+
+.contribute__title {
+  width: 184px;
+}
+
+.contribute__list {
+  .list-reset();
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 41px;
+    padding-right: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.contribute__item {
+  position: relative;
+  padding-left: 45px;
+  width: 100%;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    width: 48%;
+    min-height: 72px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 25%;
+    padding-top: 3px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.contribute__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #222222;
+  width: 100%;
+  vertical-align: middle;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 59px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.contribute__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: white;
+  border: 1px solid #cfcfcf;
+
+  @media (min-width: @tablet-width) {
+    top: -8px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 40px;
+  }
+}
+
+.contribute__input:checked + .contribute__label::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  display: block;
+  border-bottom: 1.5px solid #68b738;
+  border-left: 1.5px solid #68b738;
+  transform: rotate(-45deg);
+  left: 6px;
+  top: 5px;
+
+  @media (min-width: @tablet-width) {
+    left: 40px;
+    top: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 52px;
+  }
+}
+
+.contribute__input:hover + .contribute__label::before {
+  border-color: #bababa;
+}
+
+.contribute__label:active {
+  opacity: 0.3;
+}
+
+.contribute__input:disabled + .contribute__label {
+  opacity: 0.3;
+}
+
+.contribute__input:focus + .contribute__label {
+  outline: 1px solid #cdcdcd;
+}

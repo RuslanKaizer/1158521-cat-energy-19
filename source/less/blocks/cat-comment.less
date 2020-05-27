@@ -1,0 +1,45 @@
+.cat-comment {
+  padding-top: 8px;
+  padding-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-top: 8px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.cat-comment__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  width: 100%;
+  min-height: 151px;
+  margin-top: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 10px;
+  overflow: auto;
+  border: 1px solid #e6e6e6;
+  resize: none;
+  outline: none;
+
+  &::placeholder {
+    color: #444444;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 174px;
+    padding-left: 19px;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
